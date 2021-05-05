@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  reviewers:
+  - Johann-S
+  - XhmikosR
+  labels:
+  - dependencies
+  - v5
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: karma-browserstack-launcher
+    versions:
+    - 1.5.1
